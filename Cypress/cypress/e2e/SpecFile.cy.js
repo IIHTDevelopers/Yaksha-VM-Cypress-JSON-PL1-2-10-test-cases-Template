@@ -45,7 +45,6 @@ describe("Automation Suite for Yaksha Application", () => {
       appointment.verifyVisitTypeDropdown();
     }).then(() => {
       verifyVisitType();
-      // verifyUserIsOnCorrectURL("Lab/Dashboard");
     });
   });
 
@@ -53,7 +52,6 @@ describe("Automation Suite for Yaksha Application", () => {
     cy.wrap(null).then(() => {
       operationTheatrePage.handleOtBookingAlert();
     }).then(() => {
-      // verifyUserIsOnCorrectURL("Lab/Dashboard");
       verifyModalCloseButtonIsVisible();
     });
   });
@@ -63,7 +61,6 @@ describe("Automation Suite for Yaksha Application", () => {
       doctorsPage.verifyPatientOverview();
     }).then(() => {
       verifyUserIsOnCorrectURL("Doctors/PatientOverviewMain/PatientOverview");
-      // verifyUserIsOnCorrectURL("Lab/Dashboard");
     });
   });
 
@@ -72,7 +69,6 @@ describe("Automation Suite for Yaksha Application", () => {
       doctorsPage.addProgressNoteForPatient();
     }).then(() => {
       verifyUserIsOnCorrectURL("Doctors/PatientOverviewMain/NotesSummary/NotesList");
-      // verifyUserIsOnCorrectURL("Lab/Dashboard");
     });
   });
 
@@ -81,7 +77,6 @@ describe("Automation Suite for Yaksha Application", () => {
       procurementPage.addCurrencyAndVerify();
     }).then(() => {
       verifyUserIsOnCorrectURL("ProcurementMain/Settings/CurrencyList");
-      // verifyUserIsOnCorrectURL("Lab/Dashboard");
     });
   });
 
@@ -90,7 +85,6 @@ describe("Automation Suite for Yaksha Application", () => {
       dispensaryPage.verifyExportUserCollectionReport();
     }).then(() => {
       verifyIfRecordsArePresent();
-      // verifyUserIsOnCorrectURL("Lab/Dashboard");
     });
   });
 
@@ -99,7 +93,6 @@ describe("Automation Suite for Yaksha Application", () => {
       adminPage.verifyUserProfileNavigation();
     }).then(() => {
       verifyUserIsOnCorrectURL("Employee/ProfileMain/UserProfile");
-      // verifyUserIsOnCorrectURL("Lab/Dashboard");
     });
   });
 
@@ -109,8 +102,6 @@ describe("Automation Suite for Yaksha Application", () => {
     }).then(() => {
       verifyVisitType();
     });
-    // patientPage.uploadProfilePicture();
-    // verifyImageIsUploaded();
   });
 
   it('TS-9 Verify TDS Percent update for an employee', () => {
@@ -118,7 +109,6 @@ describe("Automation Suite for Yaksha Application", () => {
       incentivePage.editTDSForEmployee();
     }).then(() => {
       verifyTdsTest();
-      // verifyUserIsOnCorrectURL("Lab/Dashboard");
     });
   });
 
