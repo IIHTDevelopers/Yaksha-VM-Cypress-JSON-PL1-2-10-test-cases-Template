@@ -2,11 +2,6 @@ class LaboratoryPage {
 
     constructor() {
         this.laboratoryLinkXPath = '';
-        this.laboratoryDashboardXPath = '';
-        this.settingsSubModuleXPath = '';
-        this.addNewLabTestXPath = '';
-        this.addButtonXPath = '';
-        this.closeButtonXPath = '';
         this.starIconXPath = '';
     }
 
