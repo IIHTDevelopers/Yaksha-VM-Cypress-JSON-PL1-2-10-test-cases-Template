@@ -2,9 +2,7 @@ class LoginPage {
   user = "";
   pass = "";
   signIn = "";
-  errorMsg = "";
   admin = "";
-  logout = "";
 
   /**
    * @Test0 This method logs in the user with valid credentials.
